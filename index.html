@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thala Fan Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <video id="backgroundVideo" autoplay loop>
+      <source src="thala2.mp4" type="video/mp4" media="(min-width: 769px)" />
+
+      <source src="thala2.mp4" type="video/mp4" media="(max-width: 768px)" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">
+      <h1 id="textDisplay"></h1>
+      <h1 id="textDisplay2">THALA FOR A REASON !</h1>
+      <form id="thalaForm" class="thala">
+        <input
+          type="text"
+          id="thalaInput"
+          name="thalaInput"
+          placeholder="THALA for what reason ?"
+          required
+        />
+        <button type="submit">Check</button>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
