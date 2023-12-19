@@ -75,7 +75,7 @@ function formatString(input) {
     const result = eval(input);
     return `${input}=${result}`;
   } else {
-    const formattedString = input.toUpperCase().split("").join("+") + " = 7";
+    const formattedString = input.toUpperCase().split("").join(" + ") + " = 7";
     return formattedString;
   }
 }
