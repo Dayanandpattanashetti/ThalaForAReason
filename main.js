@@ -45,14 +45,14 @@ function displayVideo(result) {
 }
 
 function countAlphabetsAndCheckLength(input) {
-  const cleanedInput = input.replace(/\s/g, ""); // Remove white spaces
+  const cleanedInput = input.replace(/\s/g, "");
 
-  // Check if the input is a string of length seven
+
   if (cleanedInput.length === 7) {
     return formatString(cleanedInput);
   }
 
-  // Check if the input is an expression and evaluate it
+
   try {
     const result = eval(cleanedInput);
 
@@ -61,7 +61,6 @@ function countAlphabetsAndCheckLength(input) {
       return formatString(cleanedInput);
     }
   } catch (error) {
-    // If there's an error in evaluating the expression or the length is not 7, return false
     return false;
   }
 
